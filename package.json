@@ -1,0 +1,32 @@
+{
+  "name": "sweeter",
+  "version": "0.0.40",
+  "description": "CLI tool for concurrent JavaScript package development.",
+  "files": ["lib"],
+  "bin": {
+    "sweeter": "./lib/sweeter.js"
+  },
+  "scripts": {
+    "build": "nwb build-web-module && npm install -g && npm install -g",
+    "clean": "nwb clean-module",
+    "test": "nwb test",
+    "test:coverage": "nwb test --coverage",
+    "test:watch": "nwb test --server",
+    "lockfile": "rm package-lock.json && npm install"
+  },
+  "author": "Mica Cardillo <micac@flowjo.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "nwb": "0.16.3"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "commander": "^2.11.0",
+    "fs-extra": "^3.0.1",
+    "homedir": "^0.6.0",
+    "mkdirp": "^0.5.1",
+    "shelljs": "^0.7.8",
+    "touch": "^3.1.0",
+    "update-notifier": "^2.2.0"
+  }
+}
