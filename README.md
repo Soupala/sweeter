@@ -51,7 +51,7 @@ The remove-local-dependency command should be executed from the top level direct
 
 **sweeter save-order <number>**
 
-The supplied value must be numeric. Saves or updates the `order` property to current template for package in the current working directory. This property can be used by other scripts and commands to build and test packages in the synchronously in the correct order. In the future, it would be ideal to develop an algorithm for calculating build order automatically.
+The supplied value must be numeric. Saves or updates the `order` property to current template for package in the current working directory. This property can be used by other scripts and commands to build and test packages synchronously in the correct order. In the future, it would be ideal to develop an algorithm for calculating build order automatically.
 
 **sweeter off**
 
